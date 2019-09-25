@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/general_background"
+    android:padding="@dimen/sixteen"
+    android:layout_marginBottom="@dimen/txt_twelve"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/image_star"
+        android:layout_alignParentStart="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/notification_profile_picture"/>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/image_star"
+        android:layout_marginLeft="@dimen/sixteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/notification_title"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification title"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/notification_text"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/txt_eleven"
+            android:layout_below="@+id/name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How would you like to be padi"/>
+        <TextView
+            android:id="@+id/notification_time"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/txt_eleven"
+            android:layout_below="@+id/name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 mins"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

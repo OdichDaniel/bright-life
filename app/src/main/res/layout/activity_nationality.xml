@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".activities.NationalityActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Nationality data"
+        android:background="@color/colorPrimary"
+        app:titleMarginStart="@dimen/sixteen"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/colorWhite" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar"
+        android:padding="@dimen/sixteen"
+        android:id="@+id/navigation_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/next_fragment_nationality"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow_forward"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="3dp"
+            app:civ_fill_color="@color/colorPrimary" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/previous_fragment_nationality"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            app:civ_fill_color="@color/colorPrimary"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow_backward"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="3dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/navigation_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/sixteen">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="How do you want to be identified"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_fourteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="*"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/txt_fourteen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/four">
+
+                <RadioGroup
+                    android:id="@+id/identity_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/radio_national_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/sixteen"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:text="National Id" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio_passport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/sixteen"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:text="Passport" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_national_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="National identity card number"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_fourteen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="*"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/txt_fourteen" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_national_id_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:cursorVisible="true"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="text"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Take a selfie of your face"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_fourteen"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/selfie_card_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_margin="5dp"
+                        android:visibility="visible"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:id="@+id/image_camera"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/camera"
+                                android:layout_centerInParent="true"/>
+
+                            <ImageView
+                                android:id="@+id/image_selfie"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Provide both back and front image of your national ID"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_fourteen"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_front_image_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_margin="5dp"
+                        android:visibility="visible"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/colorSecondary"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/front_title"
+                                android:layout_margin="@dimen/sixteen"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_eleven"
+                                android:text="click here to upload front image"/>
+
+                            <ImageView
+                                android:id="@+id/image_id_front"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_back_image_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_margin="5dp"
+                        android:visibility="visible"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/colorSecondary"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/sixteen"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_eleven"
+                                android:text="click here to upload back image"/>
+
+                            <ImageView
+                                android:id="@+id/id_image_back"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--layout passort-->
+            <LinearLayout
+                android:id="@+id/layout_passport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Passport number"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_fourteen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="*"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/txt_fourteen" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_passport_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:cursorVisible="true"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="text"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Provide an image of your passport"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_fourteen"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_passport_natioanlity"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_margin="5dp"
+                        android:visibility="visible"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/colorSecondary"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/sixteen"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_eleven"
+                                android:text="click here to upload passport image"/>
+
+                            <ImageView
+                                android:id="@+id/image_passport"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:visibility="visible"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/btn_confirm_nationality_data"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/layout_location"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_button_solid_background"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/eight"
+                android:text="Save and proceed"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

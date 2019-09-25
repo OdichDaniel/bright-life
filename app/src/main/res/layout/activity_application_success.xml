@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ApplicationSuccessActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Successfull submission"
+        app:titleMarginStart="@dimen/sixteen"
+        app:titleTextColor="@color/colorWhite" />
+
+    <RelativeLayout
+        android:padding="@dimen/txt_twenty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/image_tick"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_tick_done" />
+
+        <TextView
+            android:id="@+id/success_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_tick"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Success"
+            android:textColor="@color/colorGreen"
+            android:textSize="@dimen/txt_twenty"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/success_txt_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/success_txt"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_horizontal"
+            android:text="@string/successfull_submission" />
+
+        <Button
+            android:layout_marginTop="@dimen/sixteen"
+            android:id="@+id/btn_review"
+            android:layout_width="match_parent"
+            android:background="@drawable/round_button_solid_background_color_secondary"
+            android:fontFamily="@font/poppins_regular"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/eight"
+            android:text="REVIEW SUBMISSION"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/success_txt_message"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

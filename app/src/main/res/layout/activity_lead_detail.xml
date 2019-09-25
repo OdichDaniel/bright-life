@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LeadDetailActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleMarginStart="@dimen/sixteen"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/colorWhite" />
+    <LinearLayout
+        android:padding="@dimen/sixteen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Name: "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_fifteen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="customer name "
+            android:textSize="@dimen/txt_fifteen" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Contact: "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_fifteen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="07843093493"
+            android:textSize="@dimen/txt_fifteen" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Location: "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_fifteen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Kampala"
+            android:textSize="@dimen/txt_fifteen" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Location: "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_fifteen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Kampala"
+            android:textSize="@dimen/txt_fifteen" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Quantity: "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_fifteen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="8"
+            android:textSize="@dimen/txt_fifteen" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Transaction Date: "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_fifteen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="13-12-2019"
+            android:textSize="@dimen/txt_fifteen" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="@dimen/sixteen"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/layout_location"
+        android:background="@drawable/round_button_solid_background"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="@dimen/eight"
+        android:text="Convert lead to sale"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

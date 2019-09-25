@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "742929325860",
+    "firebase_url": "https://bright-life-project.firebaseio.com",
+    "project_id": "bright-life-project",
+    "storage_bucket": "bright-life-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742929325860:android:382f5626870871102e5db1",
+        "android_client_info": {
+          "package_name": "com.matchstick.brightlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742929325860-7e8j09ng25jbjj98i295rjjo2qa7mfr2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.matchstick.brightlife",
+            "certificate_hash": "f9935245b2d526f2d6c9815451856c97f6669208"
+          }
+        },
+        {
+          "client_id": "742929325860-21rdm1bdk85fo9evm31hd6gqeosdpclp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsStpsUGXxOXOtW2q54NE_joNfOVyrQn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742929325860-21rdm1bdk85fo9evm31hd6gqeosdpclp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

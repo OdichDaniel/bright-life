@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">Bright life</string>
+    <string name="screen_one_title">Screen one title</string>
+    <string name="screen_one_message">Screen one tour message</string>
+    <string name="screen_two_title">Screen two title</string>
+    <string name="screen_two_message">Screen two tour message</string>
+    <string name="screen_three_title">Screen three title</string>
+    <string name="screen_three_message">Screen three tour message</string>
+    <string name="screen_four_title">Screen four title</string>
+    <string name="screen_four_message">Screen four tour message</string>
+    <string name="verification_message">Enter your phone number. A verification SMS code will be sent
+    to you, SMS charges may apply</string>
+    <string name="requirement">Before we can get started , please make sure you have the following</string>
+    <string name="agreement">By proceeding, you agree to the use of the information you have provided to contact you for tracking
+    your application status, contact,. and follow ups for verification process</string>
+    <string name="requirement_document">Please upload a file or take a photo of the document, you can take more than one photo of the document if the document has many pages</string>
+    <string name="next_of_kin_title">Please provide valid information about your next of kin, We can reach him incase you are
+    unavailable</string>
+    <string name="sale_title">Here is where you will find all your details, Tasks, Sales, Product details etc, if your ever find problem tap
+    help on the menu</string>
+    <string name="no_details">No details yet to show yet, the table will get populated when you start to make sales</string>
+    <string name="new_sales">Please make sure that your GPS is turned on the entire time</string>
+    <string name="verification_success_message">A verification code has been sent to your phone, please verify your phone number</string>
+    <string name="under_verification_message">Your application is still under verification, please check again later. Thank you.</string>
+    <string name="verified_message">Your application has been verified, Congratulation upon becoming a new Brightlife agent, Please Login</string>
+    <!--validation rules-->
+    <string name="error_first_name">First name is required</string>
+    <string name="error_last_name">Last name is required</string>
+    <string name="error_email">Invalid email pattern</string>
+    <string name="error_phone_number">Phone number is required</string>
+    <string name="error_alternative_phone">Alternative phone number id required</string>
+    <string name="error_dob">Date of birth is required</string>
+    <string name="error_title">Title is required</string>
+    <string name="error_location">Location is required</string>
+    <string name="error_nok_first_name">NOK first name is required</string>
+    <string name="error_nok_last_name">NOK last name is required</string>
+    <string name="error_nok_email">NOK email is required</string>
+    <string name="error_nok_phone_number">NOK phone number is required</string>
+    <string name="error_nin">National identity required</string>
+    <string name="error_front_image">National ID front image required</string>
+    <string name="error_back_image">National ID back image required</string>
+    <string name="error_passport_number">Passport number required</string>
+    <string name="error_passport_photo">Passport image required</string>
+    <string name="error_result_slip">Result slip required</string>
+    <string name="error_cv">CV attachment required</string>
+    <string name="error_recommendation">Recommendation attachment required</string>
+    <string name="error_lc1">LC1 letter required</string>
+    <string name="error_wrong_nin">Nin must be 14 alphanumeric characters</string>
+    <string name="network_error">The system encountered an error.</string>
+    <string name="missing_fields">Missing fields, please fill in all the feilds</string>
+    <string name="successfull_submission">Your application has been submitted successfully, you
+    will be notified by sms or email if the status changes</string>
+
+
+    <!--    Sales Agreement-->
+    <string name="sales_agreement">
+        THE REPUBLIC OF UGANDA
+        THE CONTRACTS ACT, 2010
+        SALES AGENT AGREEMENT
+This Sales Agent Agreement (the “Agreement”) is entered into this ………………. day of ………………
+        between FINCA Plus, LLC, a branch office of FINCA Plus, LLC, a limited liability company
+        organized under the laws of Delaware, United States of America and which was registered in Uganda as a foreign company on 24th March 2014 under Certificate No. F2514 (“FINCA Plus”), and [ …………………………………………] (the “Agent”) (collectively the “Parties”).
+The “Effective Date” shall be the date the Agreement is signed by both Parties.
+WHEREAS:
+FINCA Plus, LLC (“FINCA Plus”) has developed a program (the “FINCA Plus Program”) to promote, distribute, finance, sell and service life-improving products (the “Products”) in Uganda that will target both FINCA clients as well as non-FINCA clients so they can create jobs, build assets and improve their standard of living; and,
+
+
+
+The Agent desires to act as a Sales Agent under the FINCA Plus Program and perform the services described in this Agreement and such services as may be communicated by the Company in writing to (the “Services”); and
+
+NOW, THEREFORE, in consideration of the mutual agreements herein contained, and for good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the Parties hereto agree as follows:
+
+Appointment
+
+Subject to the terms and conditions contained in this Agreement, FINCA Plus hereby appoints the Agent to serve as a Sales Agent. The Agent accepts this appointment and agrees to faithfully; honestly and diligently use its best efforts to perform the duties and obligations contained in this Agreement as further detailed in Section 2.
+
+The Agent shall be required to follow the procedures and standards established by FINCA Plus detailed herein for the products and/or services. FINCA Plus shall have sole authority as to which of the Products are sold by the Agent.
+
+The Agent shall serve in _______________________ (“the Territory”). FINCA Plus reserves the right to solicit/engage other Agents directly from businesses within the Territory.
+
+Duties of the agent
+
+The Agent shall use best efforts to promote, market and develop sales of the products in the territory to the satisfaction of FINCA Plus, in accordance with the agreement and the policies of FINCA Plus
+    as communicated from time to time.
+
+The Agent shall, to the best of their ability and the satisfaction of the FINCA Plus LLC, engage in promotional activities for FINCA Plus program and provide reasonable assistance to company in promotional activities in the territory.
+
+During the term of this agreement and thereafter, the Agent shall not conduct or promote any competitor business relating to the Products within the territory.
+
+The agent shall maintain records of its sales figures, client contacts and promotional activities and shall provide such records to FINCA Plus as of the end of each business day. The Agent is responsible for the inventory and stock that is provided to them.
+
+The Agent shall ensure strong customer satisfaction, on-time payment, and facilitate repeat sales.
+
+The Agent shall be solely responsible for the full and on time payment of its own taxes and other dues and the performance of any legal obligations in accordance with the laws of Uganda.
+
+The Agent shall attend all mandatory trainings offered by FINCA Plus. In addition, the Agent must make him/herself available for visits by a FINCA Plus Area Sales Manager.
+
+The Agents shall handle customer enrolment, credit and payment in accordance with FINCA Plus policies and procedures.
+
+The Agent shall provide customer education and after sale services pursuant to the policies and procedures set forth at the point of sale, during delivery and installation and after sale of the product.
+
+Term and Termination
+
+This Agreement shall commence on the Effective Date and remain in effect for a period of 90 days (3 Months). The Parties may renew the Agreement if sales performance warrants.
+
+Either party may terminate this agreement without cause on five (5) working days’ written notice to the other party.
+
+Subject to clause 2.2, the company may terminate the agreement with immediate effect for:
+
+Failure to obtain satisfactory reference checks from the Agent’s referees.
+
+Acts or omissions of the Agent, which are in the opinion of FINCA Plus to the detriment of a customer which may damage the reputation of the company or prejudice its interests.
+    Involvement by the Agent in criminal conduct of any kind whatsoever including but not limited to any dishonest or fraudulent act.
+
+Breach of confidentiality or loyalty commitment to FINCA Plus.
+
+Acting in contravention of applicable laws.
+
+Bankruptcy of the Agent or death of the Agent
+
+      Commission, Incentive and Facilitation
+
+FINCA Plus shall pay commission incentive and facilitation on this contract as per the valid commission schedule in place.
+
+4. 	Relationship and Assignment
+
+4.1. 	The Agent shall conduct all of its business contemplated by this Agreement in its own name and as an independent contractor.  Nothing in this Agreement shall be construed to (I) appoint any party as an agent of the other or to constitute the parties as partners, joint ventures, co-owners or otherwise; (ii) give either party the power to direct and control the day-to-day activities of the other; (iii) nor shall either Party have any authority to bind the other in any respect, it being intended that each shall remain an independent contractor responsible only for its own actions.
+
+The Agent agrees that he shall not, directly or indirectly, represent to any person that the Agent possesses authority to obligate the Distributor or FINCA Plus in any manner.  Without limiting the generality of the foregoing, the Agent further agrees that he shall not, without FINCA Plus’s written permission, make representations or guarantees concerning the Products or make any credit allowances for the Products except in line with FINCA Plus policy and procedures.
+
+The Agent may not assign its rights or delegate their obligations under this Agreement, whether by operation of law or otherwise, in whole or in part, without the prior written consent of FINCA Plus.  FINCA Plus may assign its rights and obligations under the Agreement to any of its affiliate companies or organisations.
+
+Confidentiality
+
+5.1 	The Agent acknowledges that in the course of performing the Services hereunder, it will have access to certain information and materials concerning FINCA Plus’s business plans, trade secrets,
+    operating methodology, marketing and sales strategies and plans, financial reports and other financial information that is confidential and of substantial value to FINCA Plus the “Confidential Information”).
+
+ For the avoidance of doubt, all terms of this Engagement Letter are also considered Confidential Information. Confidential Information does not include any information which
+
+ (i) is rightfully known by the Agent prior to disclosure,
+
+(ii) is generally publicly available or later becomes publicly available without violation of this Agreement,
+
+ (iii) is lawfully obtained from a third party which had no obligation to keep the information confidential; and
+
+(iv) is required by law to be disclosed.
+
+The Agent agrees that except as expressly consented to in writing by FINCA Plus, it shall not disclose or divulge any of the Confidential Information. The Agent further agrees that it shall not use the Confidential Information in any manner, directly or indirectly, except solely for the purposes of the providing the services described herein it shall not use in any way for its own account or the account of any third party, nor disclose to any third party, any such Confidential Information revealed to it by the Company.
+
+WHEREOF, the parties hereto, each by a duly authorized representative, have executed this Agreement as of the Effective Date.
+
+
+
+
+
+FINCA Plus, LLC                                     		MANAGER
+
+Signature: _________________________ 		Signature: _________________________
+
+Name: Stefan Grundmann			   		Name: ____________________________
+
+Date:   ____________________________		 Date:   ____________________________
+
+
+
+
+
+AGENT
+
+Signature: _________________________
+    Name: ____________________________
+
+Date:   ____________________________
+
+</string>
+
+    <string name="network_exception_error">Oooops something went wrong, try again in a moment</string>
+    <string name="network_error_500">Our system is still going upgrade, please check back again later</string>
+    <string name="network_error_404">Ooops we couldn\'t find your request</string>
+    <string name="network_error_400">Record already exist</string>
+    <string name="network_error_200">Successfully created an account</string>
+    <string name="network_error_401">Incorrect username or password, please try again</string>
+</resources>

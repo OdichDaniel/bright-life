@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LeadActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="Record a sale Lead"
+        app:titleMarginStart="@dimen/sixteen"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/colorWhite" />
+    <ScrollView
+        android:layout_marginBottom="@dimen/sixteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/sixteen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/twenty"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/sixteen"
+                android:text="@string/new_sales"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/txt_fourteen" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorText" />
+
+            <LinearLayout
+
+                android:layout_marginTop="@dimen/fifty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/loader_layout"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/loading_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/twenty"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/sixteen"
+                        android:text="Loading products"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/txt_fourteen" />
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/loading_text"
+                        android:layout_marginTop="@dimen/sixteen"
+                        android:id="@+id/indicator_loader"
+                        android:layout_width="@dimen/seventy_five"
+                        android:layout_height="@dimen/thirty"
+                        android:visibility="visible"
+                        android:layout_gravity="center_horizontal"
+                        app:indicatorColor="@color/colorSecondary" />
+                </RelativeLayout>
+                <Spinner
+                    android:id="@+id/spinner_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="text"
+                    android:hint="Product name"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/et_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:hint="customer name"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="text"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_customer_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="text"
+                    android:padding="10sp"
+                    android:hint="Customer location"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/et_customer_telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="phone"
+                    android:hint="Customer telephone"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_quantity_bought"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="text"
+                    android:padding="10sp"
+                    android:hint="Quantity bought"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/btn_convert_lead_to_sale"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/layout_location"
+                    android:background="@drawable/round_button_solid_background"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="@dimen/eight"
+                    android:text="Create sale lead"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

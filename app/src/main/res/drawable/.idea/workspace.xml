@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="025b05e9-fcff-4586-893c-8a72ec2c14ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/activities/NewSaleActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/activities/SignupActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/entities/MyApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-hdpi/ic_arrow_backward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-hdpi/ic_arrow_forward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-mdpi/ic_arrow_backward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-mdpi/ic_arrow_forward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-xhdpi/ic_arrow_backward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-xhdpi/ic_arrow_forward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-xxhdpi/ic_arrow_backward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-xxhdpi/ic_arrow_forward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-xxxhdpi/ic_arrow_backward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-xxxhdpi/ic_arrow_forward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_new_sale.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_signup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../release/app-release.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/activities/LoginActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/activities/OnboardingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/activities/OnboardingActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/activities/RequirementActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/activities/RequirementActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/activities/SelectActionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/activities/SelectActionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/entities/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/entities/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentBiodata.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentBiodata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentConfirmRequirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentConfirmRequirement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentNationality.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentNationality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentNextOfKinData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentNextOfKinData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/fragments/FragmentSale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/network/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/network/ApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/network/RetrofitBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/matchstickstudios/brightlife/network/RetrofitBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-v24/round_button_solid_background_color_secondary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drawable-v24/round_button_solid_background_color_secondary.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/round_button_solid_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/round_button_solid_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_onboarding.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_onboarding.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_requirement.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_requirement.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_select_action.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_select_action.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/basic_bio_data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/basic_bio_data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/dialog_pin_reset.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/dialog_pin_reset.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/dialog_pin_reset_request.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/dialog_pin_reset_request.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/fragment_confirm_requirement.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/fragment_confirm_requirement.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/fragment_document.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/fragment_document.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/fragment_nationality.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/fragment_nationality.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/fragment_next_of_kin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/fragment_next_of_kin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/fragment_sale.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/fragment_sale.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="326" />
+    <option name="y" value="289" />
+    <option name="width" value="1391" />
+    <option name="height" value="791" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="025b05e9-fcff-4586-893c-8a72ec2c14ec" name="Default Changelist" comment="" />
+      <created>1567692850510</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567692850510</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="27" width="1853" height="1053" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.3295082" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+</project>

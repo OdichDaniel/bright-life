@@ -1,0 +1,11 @@
+<TextView android:id="@+id/txt_product_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/black"
+    android:layout_centerVertical="true"
+    android:text="soloar lamp"
+    android:padding="@dimen/five"
+    android:fontFamily="@font/poppins_regular"
+    android:textSize="@dimen/txt_sixteen"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+

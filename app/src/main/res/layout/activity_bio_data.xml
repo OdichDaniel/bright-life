@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_fragment_biodata"
+    android:orientation="vertical"
+    tools:context=".activities.BioDataActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleMarginStart="@dimen/sixteen"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/colorWhite" />
+    <RelativeLayout
+        android:visibility="gone"
+        android:padding="@dimen/sixteen"
+        android:id="@+id/navigation_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/next_fragment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            app:civ_fill_color="@color/colorPrimary"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow_forward"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="3dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginBottom="@dimen/sixteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/sixteen">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Title"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_fourteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="*"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/txt_fourteen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/four">
+
+                <RadioGroup
+                    android:id="@+id/frequency_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/radio_title_mr"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/sixteen"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:text="Mr" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio_title_mrs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/sixteen"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:text="Mrs" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio_title_miss"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:text="Miss" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="First name(as shown on ID)"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_fourteen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="*"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/txt_fourteen" />
+                </LinearLayout>
+                <EditText
+                    android:hint="First name"
+                    android:id="@+id/et_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="text"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Middle name(as shown on ID)"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_fourteen" />
+                </LinearLayout>
+                <EditText
+                    android:hint="Middle name"
+                    android:id="@+id/et_middle_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="text"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Last name(as shown on ID)"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_fourteen" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="*"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/txt_fourteen" />
+                </LinearLayout>
+                <EditText
+                    android:hint="Last name"
+                    android:id="@+id/et_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="text"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Email address"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_fourteen" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="*"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/txt_fourteen" />
+                </LinearLayout>
+                <EditText
+                    android:hint="Email address"
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="textEmailAddress"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Which branch are you applying to"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_fourteen" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="*"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/txt_fourteen" />
+                </LinearLayout>
+                <Spinner
+                    android:hint="Location"
+                    android:id="@+id/et_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Date of birth"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_fourteen" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="*"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/txt_fourteen" />
+                </LinearLayout>
+                <EditText
+                    android:focusable="false"
+                    android:hint="Click to select date of birth"
+                    android:clickable="true"
+                    android:id="@+id/et_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="text"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Mobile Number"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_fourteen" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="*"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/txt_fourteen" />
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="phone"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Alternative phone number"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_fourteen" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=" (This is'nt your registered number)"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="10sp" />
+                </LinearLayout>
+                <EditText
+                    android:hint="Alternative phone number"
+                    android:id="@+id/et_other_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="phone"
+                    android:padding="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#9F9F9F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/sixteen"
+                android:textSize="@dimen/txt_eleven"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agreement"/>
+            <Button
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/btn_save_biodata"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/layout_location"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_button_solid_background"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/eight"
+                android:text="Save and proceed"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
